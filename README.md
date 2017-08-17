@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/react-native-markdown-editor.svg)](https://badge.fury.io/js/react-native-markdown-editor)
 [![Build Status](https://travis-ci.org/kunall17/react-native-markdown-editor.svg?branch=master)](https://travis-ci.org/kunall17/react-native-markdown-editor)
 
-This is a library for rendering a Full screen editor for the markdown with helper buttons to easily write markdown. With live preview markdown as well (thanks to https://github.com/Benjamin-Dobell/react-native-markdown-view)
+This is a library for rendering a markdown editor for the markdown with helper buttons to easily write markdown. With live preview markdown as well (thanks to https://github.com/Benjamin-Dobell/react-native-markdown-view)
 
 ## Index
 
@@ -15,6 +15,7 @@ This is a library for rendering a Full screen editor for the markdown with helpe
     * [Your own custom formats](#your-own-custom-formats)
     * [Customize the helper button](#customize-the-helper-button)
     * [Customize the renderButton styles](#customize-the-renderbutton-styles)
+* [Props for the Markdown Editor](#props)
 * [Contributing](#contributing)
 
 ## Getting Started
@@ -77,16 +78,16 @@ function codeExample(arg) {
 
 Import the editor through
 
-`import { FullScreenEditor } from 'react-native-markdown-editor';`
+`import { MarkdownEditor } from 'react-native-markdown-editor';`
 
 And use like this this in the jsx
 
-`<FullScreenEditor />`
+`<MarkdownEditor />`
 
 And pass a function `onMarkdownChange` which will be callback when markdown is changed
 
 ```
- <FullScreenEditor onMarkdownChange={this.onTextChange} />
+ <MarkdownEditor onMarkdownChange={this.onTextChange} />
 ```
 
 It can be used with a toolbar and have a submit menu option there!
@@ -98,7 +99,7 @@ It can be used with a toolbar and have a submit menu option there!
 You can give a custom list of buttons you want to give the default is [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js) by speicifying
 
 ```
-   <FullScreenEditor Formats={YOUR_CUSTOM_Formats} />
+   <MarkdownEditor Formats={YOUR_CUSTOM_Formats} />
 ```
 
 #### Customize the helper button
@@ -135,6 +136,14 @@ You can add a style key in the Formats.js and this will be used while rendering 
 ```
 
 
+## Props
+
+|       Name       |   Type   |                                                         Default                                                         |                   Description                    |
+|:---------------- |:-------- |:----------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------ |
+| Formats          | Array    | [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)                      | Elements for the render buttons                  |
+| renderButton     | function | [renderDefaultButton](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/renderButtons.js#L9) | A custom function to render the markdown buttons |
+| onMarkdownChange | Function |                                                                                                                         | Callback function, calls when markdown is typed  |
+| showPreview      | boolean  | false                                                                                                                   | To show the markdown preview by Default          |
 
 ## Contributing
 
