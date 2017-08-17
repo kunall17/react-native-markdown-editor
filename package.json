@@ -4,8 +4,11 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "test": "jest"
-  },
+    "test": "npm run test:prettier && jest",
+    "prettier-all": "prettier --write --single-quote --jsx-bracket-same-line --trailing-comma all --print-width 100  `find lib -name \"*.js\"`",
+    "prettier": "prettier --write --single-quote --jsx-bracket-same-line --trailing-comma all --print-width 100",
+    "test:prettier": "prettier-check  --single-quote --jsx-bracket-same-line --trailing-comma all --print-width 100 `find lib -name \"*.js\"`"
+    },
   "dependencies": {
     "react": "16.0.0-alpha.12",
     "react-native": "0.47.1",
@@ -15,7 +18,9 @@
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.1.0",
     "deep-freeze": "^0.0.1",
-    "jest": "20.0.4"
+    "jest": "20.0.4",
+    "prettier": "^1.5.3",
+    "prettier-check": "^1.0.0"
   },
   "jest": {
     "preset": "react-native"
