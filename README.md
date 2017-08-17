@@ -13,6 +13,7 @@ This is a library for rendering a Full screen editor for the markdown with helpe
 * [Customizing](#Customizing)
     * [Your own custom formats](#your-own-custom-formats)
     * [Customize the helper button](#customize-the-helper-button)
+    * [Customize the renderButton styles](#customize-the-renderbutton-styles)
 * [Contributing](#contributing)
 
 ## Getting Started
@@ -20,23 +21,23 @@ This is a library for rendering a Full screen editor for the markdown with helpe
 Install the node module:
 
     `yarn add react-native-markdown-editor`
-    
+
 or with npm:
 
     `npm install --save react-native-markdown-editor`
-    
-Then see [Usage](#usage) for futher details 
+
+Then see [Usage](#usage) for futher details
 
 ## Screenshots
 
-Screenshot: 
+Screenshot:
 
 <img src="https://user-images.githubusercontent.com/12700799/29249007-f6d2d194-8043-11e7-94d8-e865676f5b95.png" width="40%" />
 
 ## Features
 
 * Multiline textinput for writing markdown
-* Live preview of the markdown written (can be hidden) 
+* Live preview of the markdown written (can be hidden)
 * Helper buttons to write the syntax for the markdown (like github)  
 
 
@@ -46,18 +47,18 @@ Screenshot:
 
 **Bold Text**
 
-*Italic Text* 
+*Italic Text*
 
-__Underline text__ 
+__Underline text__
 
-~~Strikethrough~~ 
+~~Strikethrough~~
 
-`Inline code` 
+`Inline code`
 
 * Item 1
 * Item 2
 
-Url Links: 
+Url Links:
 
 [GitHub](http://github.com)
 
@@ -99,12 +100,12 @@ You can give a custom list of buttons you want to give the default is [Formats](
    <FullScreenEditor Formats={YOUR_CUSTOM_Formats} />
 ```
 
-#### Customize the helper button 
+#### Customize the helper button
 
-You can customize the helper button using the `renderButton` prop. 
+You can customize the helper button using the `renderButton` prop.
 The buttons are rendered using a `FlatList` and the data passed is the [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)
 
-renderButton can be method like 
+renderButton can be method like
 
 ```
 const defaultRenderButton = ({ item, getState, setState }) =>
@@ -118,11 +119,21 @@ const defaultRenderButton = ({ item, getState, setState }) =>
 
 Where item is an each object in the Formats list
 
-You can also import the methods used in [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js) by using 
+You can also import the methods used in [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js) by using
 
 ```
 import { applyWrapFormatNewLines, applyWrapFormat, applyWebLinkFormat, applyListFormat } from 'react-native-markdown-editor';
 ```
+
+#### Customize the renderButton styles
+
+You can add a style key in the Formats.js and this will be used while rendering the button
+
+```  
+{ key: 'B', wrapper: '**', onPress: applyWrapFormat, style: { fontWeight: 'bold' } },
+```
+
+
 
 ## Contributing
 
