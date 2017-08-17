@@ -14,7 +14,7 @@ This is a library for rendering a markdown editor for the markdown with helper b
 * [Customizing](#Customizing)
     * [Your own custom formats](#your-own-custom-formats)
     * [Customize the helper button](#customize-the-helper-button)
-    * [Customize the renderButton styles](#customize-the-renderbutton-styles)
+    * [Customize the markdownButton styles](#customize-the-markdownbutton-styles)
 * [Props for the Markdown Editor](#props)
 * [Contributing](#contributing)
 
@@ -104,13 +104,13 @@ You can give a custom list of buttons you want to give the default is [Formats](
 
 #### Customize the helper button
 
-You can customize the helper button using the `renderButton` prop.
+You can customize the helper button using the `markdownButton` prop.
 The buttons are rendered using a `FlatList` and the data passed is the [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)
 
-renderButton can be method like
+markdownButton can be method like
 
 ```
-const defaultRenderButton = ({ item, getState, setState }) =>
+const defaultMarkdownButton = ({ item, getState, setState }) =>
   <Button
     title={item.key}
     onPress={() => item.onPress({ getState, setState, item })}
@@ -138,12 +138,12 @@ You can add a style key in the Formats.js and this will be used while rendering 
 
 ## Props
 
-|       Name       |   Type   |                                                         Default                                                         |                   Description                    |
-|:---------------- |:-------- |:----------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------ |
-| Formats          | Array    | [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)                      | Elements for the render buttons                  |
-| renderButton     | function | [renderDefaultButton](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/renderButtons.js#L9) | A custom function to render the markdown buttons |
-| onMarkdownChange | Function |                                                                                                                         | Callback function, calls when markdown is typed  |
-| showPreview      | boolean  | false                                                                                                                   | To show the markdown preview by Default          |
+|       Name       |   Type   |                                                          Default                                                          |                   Description                    |
+|:---------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------ |
+| Formats          | Array    | [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)                        | Elements for the markdown buttons                |
+| markdownButton   | function | [defaultMarkdownButton](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/renderButtons.js#L9) | A custom function to render the markdown buttons |
+| onMarkdownChange | function |                                                                                                                           | Callback function, calls when markdown is typed  |
+| showPreview      | boolean  | false                                                                                                                     | To show the markdown preview by Default          |
 
 ## Contributing
 
