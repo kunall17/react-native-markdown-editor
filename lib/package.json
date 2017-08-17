@@ -1,6 +1,6 @@
 {
   "name": "react-native-markdown-editor",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "main.js",
   "description": "A markdown editor for react native",
   "repository": {
