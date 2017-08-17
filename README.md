@@ -93,16 +93,16 @@ It can be used with a toolbar and have a submit menu option there!
 
 
 ##### Your own custom formats
-You can give a custom list of buttons you want to give the default is [FORMATS](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/FORMATS.js) by speicifying
+You can give a custom list of buttons you want to give the default is [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js) by speicifying
 
 ```
-   <FullScreenEditor FORMATS={YOUR_CUSTOM_FORMATS} />
+   <FullScreenEditor Formats={YOUR_CUSTOM_Formats} />
 ```
 
 #### Customize the helper button 
 
 You can customize the helper button using the `renderButton` prop. 
-The buttons are rendered using a `FlatList` and the data passed is the [FORMATS](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/FORMATS.js)
+The buttons are rendered using a `FlatList` and the data passed is the [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)
 
 renderButton can be method like 
 
@@ -116,9 +116,9 @@ const defaultRenderButton = ({ item, getState, setState }) =>
   />
 ```
 
-Where item is an each object in the FORMATS list
+Where item is an each object in the Formats list
 
-You can also import the methods used in [FORMATS](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/FORMATS.js) by using 
+You can also import the methods used in [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js) by using 
 
 ```
 import { applyWrapFormatNewLines, applyWrapFormat, applyWebLinkFormat, applyListFormat } from 'react-native-markdown-editor';
