@@ -148,3 +148,10 @@ You can add a style key in the Formats.js and this will be used while rendering 
 ## Contributing
 
 PR's/Issues/Bugs or suggestions are welcomed kindly post them in the https://github.com/kunall17/react-native-markdown-editor/issues section.
+
+
+## License
+
+The MIT License.
+
+[See LICENSE](LICENSE.md)
