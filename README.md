@@ -33,7 +33,7 @@ Then see [Usage](#usage) for futher details
 
 Screenshot:
 
-<img src="https://user-images.githubusercontent.com/12700799/29249007-f6d2d194-8043-11e7-94d8-e865676f5b95.png" width="40%" />
+<img src="https://raw.githubusercontent.com/kunall17/react-native-markdown-editor/static/Screenshot.png" width="40%" />
 
 ## Features
 

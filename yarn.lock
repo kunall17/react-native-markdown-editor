@@ -2584,7 +2584,7 @@ lodash@^3.5.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.6, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
+lodash@^4.14.0, lodash@^4.16.6, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3207,16 +3207,9 @@ react-native-markdown-view@^1.0.0:
     react-native-tabular-grid "github:Benjamin-Dobell/react-native-tabular-grid"
     simple-markdown "^0.2.1"
 
-react-native-simple-markdown@^1.0.60-rc.3:
-  version "1.0.60-rc.3"
-  resolved "https://registry.yarnpkg.com/react-native-simple-markdown/-/react-native-simple-markdown-1.0.60-rc.3.tgz#80c772b22eb32fb43b9f23620f6c876aef06d721"
-  dependencies:
-    lodash "^4.15.0"
-    simple-markdown "git://github.com/CharlesMangwa/simple-markdown.git"
-
-"react-native-tabular-grid@github:benjamin-dobell/react-native-tabular-grid":
+"react-native-tabular-grid@github:Benjamin-Dobell/react-native-tabular-grid":
   version "0.0.0-development"
-  resolved "https://codeload.github.com/benjamin-dobell/react-native-tabular-grid/tar.gz/64853b096f77ddcd9ffcf8e8045ab91b16e054b1"
+  resolved "https://codeload.github.com/Benjamin-Dobell/react-native-tabular-grid/tar.gz/64853b096f77ddcd9ffcf8e8045ab91b16e054b1"
 
 react-native@0.47.1:
   version "0.47.1"
@@ -3311,13 +3304,6 @@ react-proxy@^1.1.7:
   dependencies:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
-
-react-test-renderer@16.0.0-alpha.12:
-  version "16.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0-alpha.12.tgz#9e4cc5d8ce8bfca72778340de3e1454b9d6c0cc5"
-  dependencies:
-    fbjs "^0.8.9"
-    object-assign "^4.1.0"
 
 react-timer-mixin@^0.13.2:
   version "0.13.3"
@@ -3673,10 +3659,6 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
 simple-markdown@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/simple-markdown/-/simple-markdown-0.2.1.tgz#6df51517681f6aab4df1cc980cf6b845bb6b3d33"
-
-"simple-markdown@git://github.com/CharlesMangwa/simple-markdown.git":
-  version "0.1.1"
-  resolved "git://github.com/CharlesMangwa/simple-markdown.git#33d963c760b8196bee01b1a5ba9974bc7f669af1"
 
 simple-plist@^0.2.1:
   version "0.2.1"
