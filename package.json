@@ -13,8 +13,6 @@
     "react-native-markdown-view": "^1.1.4"
   },
   "devDependencies": {
-    "react": "^16.2.0",
-    "react-native": "^0.50.4",
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.1.0",
     "deep-freeze": "^0.0.1",
