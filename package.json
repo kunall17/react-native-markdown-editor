@@ -10,11 +10,11 @@
     "test:prettier": "prettier-check  --single-quote --jsx-bracket-same-line --trailing-comma all --print-width 100 `find lib -name \"*.js\"`"
     },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-native": "^0.50.4",
     "react-native-markdown-view": "^1.1.4"
   },
   "devDependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.50.4",
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.1.0",
     "deep-freeze": "^0.0.1",
