@@ -138,12 +138,13 @@ You can add a style key in the Formats.js and this will be used while rendering 
 
 ## Props
 
-|       Name       |   Type   |                                                          Default                                                          |                   Description                    |
+| Name             | Type     | Default                                                                                                                   | Description                                      |
 |:---------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------ |
 | Formats          | Array    | [Formats](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/Formats.js)                        | Elements for the markdown buttons                |
 | markdownButton   | function | [defaultMarkdownButton](https://github.com/kunall17/react-native-markdown-editor/blob/master/lib/src/renderButtons.js#L9) | A custom function to render the markdown buttons |
 | onMarkdownChange | function |                                                                                                                           | Callback function, calls when markdown is typed  |
 | showPreview      | boolean  | false                                                                                                                     | To show the markdown preview by Default          |
+| defaultText      | text     | ''                                                                                                                        | To load some default text in the editor          |
 
 ## Contributing
 
