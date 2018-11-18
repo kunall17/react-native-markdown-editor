@@ -1,7 +1,6 @@
 {
-  "name": "reactnativemarkdowneditor",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-markdown-editor",
+  "version": "1.0.2",
   "main": "main.js",
   "scripts": {
     "test": "npm run test:prettier && jest",
