@@ -22,11 +22,11 @@ This is a library for rendering a markdown editor for the markdown with helper b
 
 Install the node module:
 
-    `yarn add react-native-markdown-editor`
+    yarn add react-native-markdown-editor
 
 or with npm:
 
-    `npm install --save react-native-markdown-editor`
+    npm install --save react-native-markdown-editor
 
 Then see [Usage](#usage) for futher details
 
@@ -147,7 +147,7 @@ You can add a style key in the Formats.js and this will be used while rendering 
 
 ## Contributing
 
-PR's/Issues/Bugs or suggestions are welcomed kindly post them in the https://github.com/kunall17/react-native-markdown-editor/issues section.
+PR's/Issues/Bugs or suggestions are welcomed kindly. Post them at https://github.com/kunall17/react-native-markdown-editor/issues.
 
 
 ## License
