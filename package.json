@@ -1,7 +1,7 @@
 {
   "name": "react-native-markdown-editor",
   "version": "1.0.2",
-  "main": "main.js",
+  "main": "lib/main.js",
   "scripts": {
     "test": "npm run test:prettier && jest",
     "prettier-all": "prettier --write --single-quote --jsx-bracket-same-line --trailing-comma all --print-width 100  `find lib -name \"*.js\"`",
