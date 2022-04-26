@@ -1,6 +1,6 @@
 {
   "name": "react-native-markdown-editor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "lib/main.js",
   "scripts": {
     "test": "npm run test:prettier && jest",
